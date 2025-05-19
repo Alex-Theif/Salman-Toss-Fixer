@@ -21,10 +21,13 @@
   fbq('track', 'PageView');
 
   // ✅ Add the Subscribe event with value and currency
+   fbq('track', 'Subscribe', {
+    document.querySelector("#joinTelegramBtn").addEventListener("click", function() {
   fbq('track', 'Subscribe', {
-    value: 9.99,
-    currency: 'INR'
+    value: 5,
+    currency: 'USD'
   });
+});
 </script>
 
 <noscript>
